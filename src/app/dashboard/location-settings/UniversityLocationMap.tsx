@@ -21,6 +21,7 @@ export function UniversityLocationMap({
   return (
     <div className="w-full h-[400px] rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
       <MapContainer
+        // @ts-ignore - Property 'center' is missing in some react-leaflet type definitions
         center={center}
         zoom={15}
         scrollWheelZoom={true}
