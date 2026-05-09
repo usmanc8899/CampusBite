@@ -13,6 +13,7 @@ import type {
   Table,
   TableBooking,
   UniversitySettings,
+  Promotion,
 } from '../types'
 
 export const adminApi = {

@@ -203,7 +203,7 @@ class WebSocketService {
       data: data,
     })
     
-    toast.info(`Order Status: ${data.status}`, {
+    toast(`Order Status: ${data.status}`, {
       duration: 3000,
     })
   }
