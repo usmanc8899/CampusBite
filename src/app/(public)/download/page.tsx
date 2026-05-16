@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function DownloadPage() {
-  const downloadUrl = "https://campusbite.com/app.apk"; // Point to the generic APK / download link
+  const downloadUrl = "https://pub-dc64bbbe864b4f79b3fdd114bf9d76b3.r2.dev/apk/app-release.apk"; // Point to the generic APK / download link
 
   return (
     <div className="pt-28 pb-20 min-h-screen bg-slate-50 relative overflow-hidden">
@@ -60,17 +60,17 @@ export default function DownloadPage() {
              
             {/* Background Left Phone */}
             <div className="absolute w-[200px] h-[400px] bg-white rounded-[2rem] shadow-xl border-[6px] border-slate-100 overflow-hidden transform -rotate-12 -translate-x-16 opacity-80 z-0 hover:rotate-0 hover:-translate-y-4 hover:opacity-100 hover:z-30 transition-all duration-300 cursor-pointer">
-               <Image src="https://images.unsplash.com/photo-1512413515086-9ac6b162fb24?q=80&w=700&auto=format&fit=crop" alt="App screen 1" fill className="object-cover" />
+               <Image src="/a.jpeg" alt="App screen 1" fill className="object-cover" />
             </div>
             {/* Background Right Phone */}
             <div className="absolute w-[200px] h-[400px] bg-white rounded-[2rem] shadow-xl border-[6px] border-slate-100 overflow-hidden transform rotate-12 translate-x-16 opacity-80 z-0 hover:rotate-0 hover:-translate-y-4 hover:opacity-100 hover:z-30 transition-all duration-300 cursor-pointer">
-               <Image src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=700&auto=format&fit=crop" alt="App screen 2" fill className="object-cover" />
+               <Image src="/b.jpeg" alt="App screen 2" fill className="object-cover" />
             </div>
 
             {/* Center Front Phone */}
             <div className="absolute w-[220px] h-[440px] bg-white rounded-[2rem] shadow-2xl border-[6px] border-slate-100 overflow-hidden z-20 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-4 bg-slate-900 rounded-full z-10"></div>
-               <Image src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=700&auto=format&fit=crop" alt="App screen 3" fill className="object-cover" />
+               <Image src="/m.jpeg" alt="App screen 3" fill className="object-cover" />
             </div>
 
             {/* Floating QR Code Badge */}
