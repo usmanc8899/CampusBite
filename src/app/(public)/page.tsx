@@ -8,7 +8,7 @@ import { FaGraduationCap, FaUtensils, FaClock, FaCreditCard, FaChevronRight, FaG
 import QRCodeGenerator from "@/components/public/QRCodeGenerator";
 
 export default function LandingPage() {
-  const downloadUrl = "https://campusbite.com/app.apk";
+  const downloadUrl = "https://pub-dc64bbbe864b4f79b3fdd114bf9d76b3.r2.dev/apk/app-release.apk";
 
   return (
     <>
@@ -82,7 +82,7 @@ export default function LandingPage() {
               
               <div className="relative w-full aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-[6px] border-white ring-1 ring-slate-100">
                 <Image
-                  src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=2070&auto=format&fit=crop"
+                  src="/dummy.webp"
                   alt="Delicious Campus Burger"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -158,7 +158,7 @@ export default function LandingPage() {
       {/* Features Section */}
       <section className="py-20 lg:py-24 bg-white relative z-20 border-t border-slate-100 overflow-hidden">
         <div className="absolute -top-20 -right-20 w-64 h-64 opacity-[0.03] pointer-events-none rounded-full overflow-hidden blur-[2px]">
-          <Image src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2000&auto=format&fit=crop" alt="Pizza bg" fill className="object-cover"/>
+          <Image src="/dummy.webp" alt="Pizza bg" fill className="object-cover"/>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -201,7 +201,7 @@ export default function LandingPage() {
       {/* Download Section Refined with 3 Mobile Frames overlapping */}
       <section className="py-20 lg:py-28 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-15 object-cover pointer-events-none">
-          <Image src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop" fill alt="Food Flatlay background" className="object-cover" />
+          <Image src="/dummy.webp" fill alt="Food Flatlay background" className="object-cover" />
           <div className="absolute inset-0 bg-slate-900/90 mix-blend-multiply"></div>
         </div>
         
@@ -234,18 +234,18 @@ export default function LandingPage() {
               
               {/* Left Mockup App Screen */}
               <div className="absolute w-[180px] h-[360px] md:w-[200px] md:h-[400px] bg-white rounded-[2rem] shadow-xl border-[6px] border-slate-100/10 overflow-hidden transform -rotate-12 -translate-x-12 md:-translate-x-16 opacity-60 z-0">
-                 <Image src="https://images.unsplash.com/photo-1512413515086-9ac6b162fb24?q=80&w=700&auto=format&fit=crop" alt="App UI 1" fill className="object-cover" />
+                 <Image src="/a.jpeg" alt="App UI 1" fill className="object-cover" />
               </div>
               
               {/* Right Mockup App Screen */}
               <div className="absolute w-[180px] h-[360px] md:w-[200px] md:h-[400px] bg-white rounded-[2rem] shadow-xl border-[6px] border-slate-100/10 overflow-hidden transform rotate-12 translate-x-12 md:translate-x-16 opacity-60 z-0">
-                 <Image src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=700&auto=format&fit=crop" alt="App UI 2" fill className="object-cover" />
+                 <Image src="/b.jpeg" alt="App UI 2" fill className="object-cover" />
               </div>
 
               {/* Center Front Phone */}
               <div className="absolute w-[200px] h-[400px] md:w-[220px] md:h-[440px] bg-white rounded-[2.5rem] shadow-2xl border-[6px] border-slate-100/20 overflow-hidden z-20">
                  <div className="absolute top-3 left-1/2 -translate-x-1/2 w-14 h-3 bg-slate-900 rounded-full z-10"></div>
-                 <Image src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=700&auto=format&fit=crop" alt="App UI 3" fill className="object-cover" />
+                 <Image src="/m.jpeg" alt="App UI 3" fill className="object-cover" />
               </div>
 
               {/* Floating QR Code Label */}
