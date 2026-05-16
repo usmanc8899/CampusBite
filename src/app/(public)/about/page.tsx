@@ -25,7 +25,7 @@ export default function AboutPage() {
           {/* Main Large Bento Item (Story) */}
           <div className="md:col-span-2 relative bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-200 min-h-[400px] group">
             <Image 
-              src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=2070&auto=format&fit=crop" 
+              src="/dummy.webp" 
               alt="Students eating" 
               fill 
               className="object-cover transition-transform duration-[20s] group-hover:scale-110"
