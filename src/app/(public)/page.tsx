@@ -218,7 +218,9 @@ export default function LandingPage() {
             
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               {/* Removed Apple button, kept only Android link */}
-              <button className="flex items-center justify-center gap-3 bg-white text-slate-900 px-6 py-4 rounded-2xl font-bold hover:bg-slate-100 transition-colors shadow-lg">
+              <button  
+                onClick={() => window.open(downloadUrl, "_blank")} 
+                className="flex items-center justify-center gap-3 bg-white text-slate-900 px-6 py-4 rounded-2xl font-bold hover:bg-slate-100 transition-colors shadow-lg">
                 <FaGooglePlay size={24} className="text-green-500" />
                 <div className="text-left">
                   <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Get it for</div>
