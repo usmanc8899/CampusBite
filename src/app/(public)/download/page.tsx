@@ -36,7 +36,9 @@ export default function DownloadPage() {
 
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-10">
             {/* iOS button removed as requested */}
-            <button className="flex items-center justify-center gap-4 bg-slate-900 text-white px-8 py-5 rounded-2xl font-bold hover:bg-slate-800 transition-colors shadow-2xl">
+            <button 
+              onClick={() => window.open(downloadUrl, "_blank")}
+              className="flex items-center justify-center gap-4 bg-slate-900 text-white px-8 py-5 rounded-2xl font-bold hover:bg-slate-800 transition-colors shadow-2xl">
               <FaGooglePlay size={32} className="text-green-400" />
               <div className="text-left">
                 <div className="text-xs font-semibold text-slate-400">GET IT FOR</div>
