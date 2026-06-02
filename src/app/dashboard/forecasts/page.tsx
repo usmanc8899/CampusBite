@@ -143,7 +143,7 @@ export default function ForecastsPage() {
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Confidence Range</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Current Stock</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Recommended Stock</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                  {/* <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th> */}
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
@@ -171,14 +171,14 @@ export default function ForecastsPage() {
                       <td className="px-6 py-4 text-sm font-medium text-gray-900">
                         {forecast.recommendedStock}
                       </td>
-                      <td className="px-6 py-4">
+                      {/* <td className="px-6 py-4">
                         <button
                           onClick={() => handleStockAdjustment(forecast.menuItem.id, forecast.recommendedStock)}
                           className="px-3 py-1 text-sm bg-primary text-white rounded-lg hover:bg-blue-700 transition-colors"
                         >
                           Adjust Stock
                         </button>
-                      </td>
+                      </td> */}
                     </tr>
                   ))
                 ) : (
