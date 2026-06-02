@@ -191,7 +191,7 @@ export default function LandingPage() {
             <FeatureCard 
               icon={<FaCreditCard className="w-6 h-6 text-success" />}
               title="Easy Payments"
-              desc="Pay conveniently using your student card, direct billing, or standard cash payment."
+              desc="Pay conveniently direct billing, or standard cash payment."
               colorClass="bg-emerald-50"
             />
           </div>
