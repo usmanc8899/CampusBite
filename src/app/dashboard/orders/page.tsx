@@ -132,8 +132,17 @@ export default function OrdersPage() {
       const ordersArray = Array.isArray(response)
         ? response
         : (response as any)?.results || []
-      setOrders(ordersArray)
-      setTotalCount((response as any)?.count || ordersArray.length)
+
+      const normalizedOrders = ordersArray.map((order: any) => ({
+        ...order,
+        user: {
+          ...order.user,
+          userType: order.user?.userType || order.user?.user_type,
+        },
+      }))
+
+      setOrders(normalizedOrders)
+      setTotalCount((response as any)?.count || normalizedOrders.length)
     } catch (error) {
       console.error('Failed to load orders:', error)
       toast.error('Failed to load orders')
@@ -157,6 +166,11 @@ export default function OrdersPage() {
       CANCELLED: 'bg-red-100 text-red-800',
     }
     return colors[status] || 'bg-gray-100 text-gray-800'
+  }
+
+  const isPriorityOrder = (order: Order) => {
+    const userType = order.user?.userType
+    return !!userType && userType.toString().toUpperCase() === 'FACULTY'
   }
 
   const getPaymentStatusColor = (status: string) => {
@@ -249,7 +263,7 @@ export default function OrdersPage() {
                   orders.map((order) => (
                   <tr
                     key={order.id}
-                    className={order.isPriority ? 'bg-yellow-50 hover:bg-yellow-100' : 'hover:bg-gray-50'}
+                    className={isPriorityOrder(order) ? 'bg-yellow-50 hover:bg-yellow-100' : 'hover:bg-gray-50'}
                   >
                     <td className="px-6 py-4">
                       <Link
@@ -301,7 +315,11 @@ export default function OrdersPage() {
                       </span>
                     </td>
                     <td className="px-6 py-4">
-                      {order.isPriority && <span className="text-yellow-500">⭐</span>}
+                      {isPriorityOrder(order) ? (
+                        <span className="inline-flex items-center text-yellow-500">⭐ Faculty</span>
+                      ) : (
+                        <span className="text-gray-500">Normal</span>
+                      )}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
                       {formatRelativeTime(order.createdAt)}
